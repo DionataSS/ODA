@@ -1,8 +1,45 @@
-<h1>Traduzir para Libras</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha Página</title>
+  <script src="https://www.vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1em;
+    }
+
+    textarea {
+      font-size: 1.5em;
+      margin-top: 0.5em;
+      width: 400px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Traduzir Texto para Libras</h1>
   <form>
-    <label for="video-link">Insira o Link do Vídeo:</label>
-    <input type="text" id="video-link" name="video-link">
-    <button type="submit">Exibir Vídeo</button>
+    <label for="text-input">Insira o texto:</label>
+    <textarea id="text-input" name="text-input"></textarea>
+    <button type="button" onclick="translateToLibras()">Traduzir para Libras</button>
   </form>
-  <div id="video-player"></div>
-  <script src="main.js"></script>
+  <div id="translated-text"></div>
+  <script>
+    function translateToLibras() {
+      const textInput = document.getElementById('text-input').value;
+      const translatedText = vLibras.translate(textInput);
+      document.getElementById('translated-text').innerHTML = translatedText;
+    }
+  </script>
+</body>
+</html>
