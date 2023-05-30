@@ -27,6 +27,22 @@
   </style>
 </head>
 <body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="js/libras.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  
+    <style>
+.access-button {
+    border-radius: 50px;
+}
+  </style>
   <h1>Bem-vindo à Minha Página!</h1>
   <form>
     <label for="text-input">Insira o texto:</label>
