@@ -45,12 +45,7 @@
     <button type="button" onclick="translateToLibras()">Traduzir para Libras</button>
   </form>
   <div id="translated-text"></div>
-  <script>
-    function translateToLibras() {
-      const textInput = document.getElementById('text-input').value;
-      const translatedText = vLibras.translate(textInput);
-      document.getElementById('translated-text').innerHTML = translatedText;
-    }
-  </script>
+  
+  <script src="main.js"></script>
 </body>
 </html>
