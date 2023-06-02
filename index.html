@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Minha Página</title>
-  <script src="https://www.vlibras.gov.br/app/vlibras-plugin.js"></script>
   <style>
     body {
       display: flex;
@@ -11,20 +10,33 @@
       height: 100vh;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .content {
+      text-align: center;
       margin-bottom: 1em;
     }
 
-    textarea {
-      font-size: 1.5em;
-      margin-top: 0.5em;
-      width: 400px;
-      height: 200px;
+    .content h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5em;
+    }
+
+    .content p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 1em;
+    }
+
+    .content img {
+      display: block;
+      margin: 0 auto;
+      max-width: 400px;
+      height: auto;
+      margin-top: 1em;
     }
   </style>
+  <script src="https://www.vlibras.gov.br/app/vlibras-plugin.js"></script>
 </head>
 <body>
   <div vw class="enabled">
@@ -33,19 +45,50 @@
       <div class="vw-plugin-top-wrapper"></div>
     </div>
   </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+  <div class="content">
+    <h2>A robótica como estímulo a aprendizagem</h2>
+    <p>Porque usar a robótica da educação?
+A robótica educativa possibilita e melhora o processo de
+ensino-aprendizagem são ferramentas que consistem na aprendizagem por meio da
+montagem de sistemas constituídos por partes mecânicas e lógicas. Ou seja, os
+componentes de parte física, que podem ser, de plástico, madeira, MDF ou até
+mesmo reutilizar materiais de descarte.
+</p>
+    <img src="https://github.com/DionataSS/ODA/blob/main/istockphoto-1220591821-612x612.jpg" alt="Imagem 1">
+  </div>
+
+  <div class="content">
+    <p>E também a linguagem de programação, que é usada para conferir comandos
+de ações, como ligar e desligar, ir para frente e para trás, etc. Esses dispositivos
+passam a ser, na verdade, artefatos cognitivos que promovem a interação, a troca
+de idéias e a construção do conhecimento coletivo.</p>
+    <img src="https://github.com/DionataSS/ODA/blob/main/robotica-educacional.jpg" alt="Imagem 2">
+  </div>
+
+  <div class="content">
+    <p>Portanto, a robótica tem grande aplicação em diversas áreas, desde a
+produção industrial, até atividades domésticas. Por isso, é relevante para educação
+propiciar esses momentos aos alunos, e dar eles a possibilidade de reflexão e
+recriação destes sistemas, de forma a melhorar e até mesmo recriar novos
+dispositivos que podem ser usados no dia-a-dia.Desde a Primeira Revolução
+Industrial, robôs e outros equipamentos são utilizados para aumentar a
+produtividade das empresas. Uma parte interessante da robótica educativa é dar ao
+aluno condições de perceber que, muitos aparelhos que usamos no dia a dia, são
+também robôs, porque usam algum tipo de programação para executar ações.
+Além disso, o exercício de construção e o manejo de componentes físicos ,
+chama à atenção e o interesse dos alunos para o tema da tecnologia e para o
+conteúdo ensinado, assim a robótica funciona como ferramenta educativa, visto que,
+dentre seus inúmeros benefícios, melhora o desenvolvimento cognitivo dos alunos e
+o processo de aquisição dos conhecimentos aprendidos em sala.
+Por fim, a robótica tem um caráter multidisciplinar que beneficia diversas
+áreas do conhecimento, principalmente a matemática, além de naturalmente
+promover o trabalho em equipe e a cooperação.</p>
+    
+  </div>
+
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-
-  <h1>Bem-vindo à Minha Página!</h1>
-  <form>
-    <label for="text-input">Insira o texto:</label>
-    <textarea id="text-input" name="text-input"></textarea>
-    <button type="button" onclick="translateToLibras()">Traduzir para Libras</button>
-  </form>
-  <div id="translated-text"></div>
-  
-  <script src="main.js"></script>
 </body>
 </html>
